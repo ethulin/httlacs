@@ -14,11 +14,11 @@ class Time:
 #Add a fourth parameter, end, to the find function that specifies where to stop looking.
 
 def find(str, ch, start=0, end=None):
-    index = start
     if end == None:
         end = len(str)
+    index = start
     while index < end:
         if str[index] == ch:
             return index
         index = index + 1
-    return -1
+    return -1 #returns -1 when character is not found in string
